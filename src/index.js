@@ -45,4 +45,4 @@ export const fromEvent = (event, starter = {}) => {
   return getObject(typedData)
 }
 
-export const wrapSubmit = (callback, starter) => event => callback(fromEvent(event, starter))
+export const wrapSubmit = (callback, starter) => (event) => callback(fromEvent(event, starter))
