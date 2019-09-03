@@ -1,7 +1,10 @@
 {
   "name": "from-form-submit",
-  "version": "0.1.0",
+  "version": "0.1.1",
+  "main": "src/index.js",
   "module": "src/index.js",
+  "homepage": "https://github.com/fabienjuif/from-form-submit",
+  "repository": "github:fabienjuif/from-form-submit",
   "author": "Fabien JUIF <fabien.juif@gmail.com>",
   "license": "MIT",
   "scripts": {

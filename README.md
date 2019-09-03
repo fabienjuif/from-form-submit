@@ -1,6 +1,10 @@
 # from-form-event
 > Simply convert a form submit event to a Javascript object
 
+## Features
+- Convert types
+- Support arrays (eg: `name="values.0.name"` will be converted as `{ values: [{ name }] }`)
+
 ## API
 - `fromEvent(event: SubmitEvent, starter: Object): Object`: convert the submit event ̀`event` to a Javascript object
   * types are casted when we can
