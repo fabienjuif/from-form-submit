@@ -18,7 +18,7 @@
 **fromEvent**
 ```js
 import React from 'react'
-import { fromEvent } from 'from-form-event'
+import { fromEvent } from 'from-form-submit'
 
 const Component = () => (
   <form
@@ -41,7 +41,7 @@ const Component = () => (
 **wrapSubmit**
 ```js
 import React from 'react'
-import { wrapSubmit } from 'from-form-event'
+import { wrapSubmit } from 'from-form-submit'
 
 const Component = () => (
   <form
