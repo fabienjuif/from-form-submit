@@ -1,4 +1,4 @@
-# from-form-event
+# from-form-submit
 > Simply convert a form submit event to a Javascript object
 
 ## Features
