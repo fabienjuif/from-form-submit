@@ -11,11 +11,9 @@
     "lint": "eslint ."
   },
   "devDependencies": {
-    "eslint": "^6.3.0",
-    "eslint-config-airbnb": "^18.0.1",
-    "eslint-plugin-import": "^2.18.0",
-    "eslint-plugin-jsx-a11y": "^6.2.3",
-    "eslint-plugin-react": "^7.14.2"
+    "eslint": "^6.6.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.0"
   },
   "keywords": [
     "browser",
@@ -28,7 +26,7 @@
     "tiny"
   ],
   "eslintConfig": {
-    "extends": "airbnb",
+    "extends": "airbnb-base",
     "globals": {
       "globalThis": "readonly"
     },
