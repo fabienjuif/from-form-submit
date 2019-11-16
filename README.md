@@ -15,6 +15,7 @@
 
 - `wrapSubmit(callback: Function, starter: Object): Function`: wrap your implementation before giving it to your "submit" callback form
   * this function catch the form event, then calls ̀formEvent to retrieve data, then calls your callback with it
+  * `callback(data: object, event: window.Event): void`
 
 ## Examples (ReactJS)
 **fromEvent**
