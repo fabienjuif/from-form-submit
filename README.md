@@ -1,6 +1,8 @@
 # from-form-submit
 > Simply convert a form submit event to a Javascript object
 
+![npm bundle size](https://img.shields.io/bundlephobia/minzip/from-form-submit) ![npm](https://img.shields.io/npm/v/from-form-submit)
+
 ## Features
 - Convert types
 - Support arrays (eg: `name="values.0.name"` will be converted as `{ values: [{ name }] }`)
