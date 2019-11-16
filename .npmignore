@@ -1,0 +1,5 @@
+**
+!src/**.js
+!package.json
+!README.md
+!yarn.lock

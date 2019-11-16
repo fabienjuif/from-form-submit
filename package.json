@@ -8,12 +8,21 @@
   "author": "Fabien JUIF <fabien.juif@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "lint": "eslint ."
+    "lint": "eslint src",
+    "test": "jest src",
+    "coverage": "jest src --coverage && cat ./coverage/lcov.info | coveralls",
+    "ci": "run-p lint coverage"
   },
   "devDependencies": {
+    "@babel/core": "^7.7.2",
+    "@babel/plugin-transform-modules-commonjs": "^7.7.0",
+    "coveralls": "^3.0.7",
     "eslint": "^6.6.0",
     "eslint-config-airbnb-base": "^14.0.0",
-    "eslint-plugin-import": "^2.18.0"
+    "eslint-plugin-import": "^2.18.0",
+    "jest": "^24.9.0",
+    "jsdom": "^15.2.1",
+    "npm-run-all": "^4.1.5"
   },
   "keywords": [
     "browser",
