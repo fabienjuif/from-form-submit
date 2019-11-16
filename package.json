@@ -10,7 +10,7 @@
   "scripts": {
     "lint": "eslint src",
     "test": "jest src",
-    "coverage": "jest src --coverage | coveralls",
+    "coverage": "jest src --coverage && cat ./coverage/lcov.info | coveralls",
     "ci": "run-p lint coverage"
   },
   "devDependencies": {
