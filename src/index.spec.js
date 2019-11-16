@@ -19,7 +19,8 @@ test('all cases...', () => {
     </form>
   `
 
-  const onSubmit = (data) => {
+  const onSubmit = (data, event) => {
+    expect(event).toBeInstanceOf(window.Event)
     expect(data).toEqual({
       type: 'user',
       firstname: 'patrick',
