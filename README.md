@@ -4,8 +4,13 @@
 ![npm bundle size](https://img.shields.io/bundlephobia/minzip/from-form-submit) ![npm](https://img.shields.io/npm/v/from-form-submit) [![Coverage Status](https://coveralls.io/repos/github/fabienjuif/from-form-submit/badge.svg)](https://coveralls.io/github/fabienjuif/from-form-submit)
 
 ## Features
-- Convert types
+- Convert input values by looking at their types
+  - date
+  - number
+  - text
 - Support arrays (eg: `name="values.0.name"` will be converted as `{ values: [{ name }] }`)
+- Vanilla JS, meaning it should work with all frameworks!
+- Prevent the default form submit behaviour
 
 ## API
 - `fromEvent(event: SubmitEvent, starter: Object): Object`: convert the submit event ̀`event` to a Javascript object

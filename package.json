@@ -32,7 +32,9 @@
     "submit",
     "event",
     "light",
-    "tiny"
+    "tiny",
+    "vanilla",
+    "vanilla-js"
   ],
   "eslintConfig": {
     "extends": "airbnb-base",
