@@ -14,7 +14,7 @@
     "ci": "run-p lint coverage"
   },
   "devDependencies": {
-    "@babel/core": "^7.7.2",
+    "@babel/core": "^7.8.0",
     "@babel/plugin-transform-modules-commonjs": "^7.7.0",
     "coveralls": "^3.0.7",
     "eslint": "^6.6.0",
