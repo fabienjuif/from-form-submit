@@ -1,8 +1,7 @@
 const getObject = (typedData) => {
   const object = {}
 
-  Object
-    .entries(typedData)
+  Object.entries(typedData)
     .map(([key, value]) => [key.split('.'), value])
     .forEach(([key, value]) => {
       let reference = object
@@ -28,16 +27,10 @@ const getObject = (typedData) => {
 export const fromEvent = (event, starter = {}) => {
   event.preventDefault()
 
-  const typedData = Object.assign({}, starter)
+  const typedData = { ...starter }
 
-  Array
-    .from(event.target.elements)
-    .forEach(({
-      name,
-      type,
-      value,
-      checked,
-    }) => {
+  Array.from(event.target.elements).forEach(
+    ({ name, type, value, checked }) => {
       if (!name) return
 
       let castedValue = value
@@ -46,14 +39,11 @@ export const fromEvent = (event, starter = {}) => {
       else if (type === 'checkbox') castedValue = !!checked
 
       typedData[name] = castedValue
-    })
+    },
+  )
 
   return getObject(typedData)
 }
 
-export const wrapSubmit = (callback, starter) => (event) => (
-  callback(
-    fromEvent(event, starter),
-    event,
-  )
-)
+export const wrapSubmit = (callback, starter) => (event) =>
+  callback(fromEvent(event, starter), event)
