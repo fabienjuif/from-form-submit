@@ -32,7 +32,12 @@ export const fromEvent = (event, starter = {}) => {
 
   Array
     .from(event.target.elements)
-    .forEach(({ name, type, value, checked }) => {
+    .forEach(({
+      name,
+      type,
+      value,
+      checked,
+    }) => {
       if (!name) return
 
       let castedValue = value
