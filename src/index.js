@@ -32,12 +32,13 @@ export const fromEvent = (event, starter = {}) => {
 
   Array
     .from(event.target.elements)
-    .forEach(({ name, type, value }) => {
+    .forEach(({ name, type, value, checked }) => {
       if (!name) return
 
       let castedValue = value
       if (type === 'number') castedValue = +value
       else if (type === 'date') castedValue = new Date(value)
+      else if (type === 'checkbox') castedValue = !!checked
 
       typedData[name] = castedValue
     })
