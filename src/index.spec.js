@@ -16,6 +16,8 @@ test('all cases...', () => {
       <input name="updatedAt" type="date" value="2019-11-16" />
       <input type="text" value="should not be in data object" />
       <input type="unknown" name="unknown-type" value="as text" />
+      <input name="tomato" type="checkbox" checked />
+      <input name="cheese" type="checkbox" />
     </form>
   `
 
@@ -36,6 +38,8 @@ test('all cases...', () => {
       ],
       updatedAt: new Date('2019-11-16T00:00:00.000Z'),
       'unknown-type': 'as text',
+      tomato: true,
+      cheese: false,
     })
   }
 

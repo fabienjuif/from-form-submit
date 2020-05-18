@@ -8,6 +8,7 @@
   - date
   - number
   - text
+  - checkbox
 - Support arrays (eg: `name="values.0.name"` will be converted as `{ values: [{ name }] }`)
 - Vanilla JS, meaning it should work with all frameworks!
 - Prevent the default form submit behaviour
