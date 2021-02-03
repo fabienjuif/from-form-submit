@@ -17,7 +17,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.9.6",
-    "@babel/plugin-transform-modules-commonjs": "^7.9.6",
+    "@babel/plugin-transform-modules-commonjs": "^7.12.13",
     "coveralls": "^3.1.0",
     "eslint": "^7.0.0",
     "eslint-config-airbnb-base": "^14.1.0",
