@@ -13,7 +13,8 @@
     "coverage": "jest src --coverage && cat ./coverage/lcov.info | coveralls",
     "format": "prettier \"**/*.{ts,tsx,js,jsx,md,json}\" --write",
     "ci:check": "prettier \"**/*.{ts,tsx,js,jsx,md,json}\" --check",
-    "ci": "run-p lint coverage ci:*"
+    "ci": "run-p lint coverage ci:*",
+    "version": "npx @pika/pack"
   },
   "devDependencies": {
     "@babel/core": "^7.13.1",
