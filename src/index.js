@@ -28,7 +28,7 @@ const getObject = (typedData) => {
  * Convert form submit event to a javascript object.
  * 
  * @param {*} event form submit event
- * @param {Object?} starter object where new data will be added
+ * @param {object=} starter object where new data will be added
  */
 export const fromEvent = (event, starter = {}) => {
   event.preventDefault()
@@ -55,7 +55,7 @@ export const fromEvent = (event, starter = {}) => {
  * Convert a given callback to a form submit callback
  * 
  * @param {(data: object) => void} callback 
- * @param {Object?} starter object where new data will be added
+ * @param {object=} starter object where new data will be added
  */
 export const wrapSubmit = (callback, starter) => (event) =>
   callback(fromEvent(event, starter), event)
